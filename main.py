@@ -64,7 +64,7 @@ def is_viable(x_candidate, y_candidate, x_step, y_step):
 def follow_path(word, x_position, y_position, x_offset, y_offset):
     "Check if the journey leads to the word"
     characters_matched = 0
-    for step, character in enumerate(word, start=0):
+    for step, character in enumerate(word):
         if (
             character
             == game_grid[y_position + (y_offset * step), x_position + (x_offset * step)]
