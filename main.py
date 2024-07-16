@@ -91,7 +91,7 @@ for word in words:
                 if follow_path(word, coordinate_x, coordinate_y, mask[0], mask[1]):
                     print(
                         f"{word}: ({coordinate_x}, {coordinate_y}) -> "
-                        f"({coordinate_x+((len(word)-1) * mask[0])}, "
+                        f"({coordinate_x + ((len(word)-1) * mask[0])}, "
                         f"{coordinate_y + ((len(word)-1) * mask[1])})"
                     )
                     break
